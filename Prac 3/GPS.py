@@ -2,7 +2,7 @@ import random
 
 INITIAL = 1000
 YEARS = 10
-GREETING = "Welcome to the Gopher Population Simulator!\nStarting population: 1000\nYear 1"
+GREETING = "Welcome to the Gopher Population Simulator!\nStarting population: {}\nYear 1".format(INITIAL)
 
 
 def main():
