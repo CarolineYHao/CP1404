@@ -1,3 +1,6 @@
+'''Using a population of 1000 gophers, population is simulated for the next 10 years by using random values
+ between 10% - 20% for population increase and  between 5% - 25% population decrease each year'''
+
 import random
 
 INITIAL = 1000
