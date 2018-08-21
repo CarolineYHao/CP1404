@@ -1,6 +1,7 @@
 import random
 
-NUMBERS = 45
+NUMBERS_START = 1
+NUMBERS_END = 45
 
 
 def main():
@@ -13,9 +14,9 @@ def main():
 def create_line():
     line = []
     for i in range(6):
-        number = random.randint(1, NUMBERS)
+        number = random.randint(NUMBERS_START, NUMBERS_END)
         while number in line:
-            number = random.randint(1, NUMBERS)
+            number = random.randint(NUMBERS_START, NUMBERS_END)
         line.append(number)
     return line
 
