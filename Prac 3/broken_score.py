@@ -5,16 +5,14 @@ def main():
 
 
 def process_result(score):
-    while score < 0 or score > 100:
-        print("Invalid score")
-        score = float(input("Enter score: "))
-    if score > 90:
+    if score < 0 or score > 100:
+        result_text = "Invalid score"
+    elif score >= 90:
         result_text = "Excellent"
+    elif score >= 50:
+        result_text = "Passable"
     else:
-        if score >= 50:
-            result_text = "Passable"
-        elif score < 50:
-            result_text = "Bad"
+        result_text = "Bad"
     return result_text
 
 
