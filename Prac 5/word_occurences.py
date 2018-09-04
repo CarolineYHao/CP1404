@@ -10,10 +10,7 @@ word_list = sorted(text.split(" "))
 for word in word_list:
     if len(word) > word_length:
         word_length = len(word)
-    try:
-        text_to_word_count[word] += 1
-    except KeyError:
-        text_to_word_count[word] = 1
+    text_to_word_count[word] = text_to_word_count.get(word, 0) + 1
 # print(text_to_word_count)
 for word, count in text_to_word_count.items():
     print("{:{}} : {}".format(word, word_length, count))
