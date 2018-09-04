@@ -16,4 +16,4 @@ while state != "":
         print("Invalid short state")
     state = input("Enter short state: ").upper()
 for state, name in ABBREVIATION_TO_NAMES.items():
-    print("{} is {}".format(state, name))
+    print("{:3} is {}".format(state, name))
