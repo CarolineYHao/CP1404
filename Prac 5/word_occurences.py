@@ -5,11 +5,9 @@ many of each word are in the file.
 
 text = input("Text: ")
 text_to_word_count = {}
-word_length = 0
 word_list = sorted(text.split(" "))
+word_length = max(len(word) for word in word_list)
 for word in word_list:
-    if len(word) > word_length:
-        word_length = len(word)
     text_to_word_count[word] = text_to_word_count.get(word, 0) + 1
 # print(text_to_word_count)
 for word, count in text_to_word_count.items():

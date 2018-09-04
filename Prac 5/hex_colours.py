@@ -9,7 +9,7 @@ HEX_TO_COLOUR = {"aliceblue": "#f0f8ff", "antiquewhite": "#faebd7", "aquamarine1
 colour_name = input("Enter colour name: ").lower()
 while colour_name != "":
     if colour_name in HEX_TO_COLOUR:
-        print(colour_name, "is", HEX_TO_COLOUR[colour_name])
+        print("{} is {}".format(colour_name, HEX_TO_COLOUR[colour_name]))
     else:
         print("Invalid colour name")
-    state = input("Enter colour name: ").lower()
+        state = input("Enter colour name: ").lower()
